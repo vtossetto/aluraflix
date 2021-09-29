@@ -1,17 +1,16 @@
 body {
   font-family: "Roboto Mono", monospace;
-  min-height: 600px;
-  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png");
+  text-align: center;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
   background-color: #000000;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
 .container {
   text-align: center;
   padding: 20px;
-  height: 100vh;
 }
 
 .page-title {
@@ -21,7 +20,7 @@ body {
 
 .page-subtitle {
   color: #ffffff;
-  margin-top: 16px;
+  margin-top: 5px;
 }
 
 .page-logo {
@@ -35,27 +34,10 @@ body {
   right: 10px;
 }
 
-@media (max-height: 500px) {
-  body {
-    min-height: 800px;
-  }
+body > img {
+  margin: 0 10px;
 }
 
-input {
-  margin: 4px;
-  padding: 6px;
-  border-radius: 5px;
-}
-
-button {
-  margin-top: 12px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
-.resultado {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 16px;
+img {
+  max-height: 250px;
 }

@@ -1,14 +1,9 @@
-var numeroSecreto = parseInt(Math.random() * 11);
+var listaFilmes = [
+  "https://br.web.img2.acsta.net/pictures/19/07/23/20/57/4907896.jpg",
+  "https://1.bp.blogspot.com/-ImZPRqLsluE/WFK156_6pNI/AAAAAAAAYBY/0lEhNRF5wfQdLfr6hpT57_Jt2eBrE9H5wCLcB/s1600/arrival-kartoun-desert.jpg",
+  "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/91/90/98/20169244.jpg"
+];
 
-function Chutar() {
-  var elementoResultado = document.getElementById("resultado");
-  var chute = parseInt(document.getElementById("valor").value);
-  console.log(chute);
-  if (chute == numeroSecreto) {
-    elementoResultado.innerHTML = "Você acertou!!";
-  } else if (chute > 10 || chute < 0) {
-    elementoResultado.innerHTML = "Você deve digitar um número de 0 a 10!!";
-  } else {
-    elementoResultado.innerHTML = "Errou!!";
-  }
+for (var i = 0; i < listaFilmes.length; i++) {
+  document.write("<img src=" + listaFilmes[i] + ">");
 }
